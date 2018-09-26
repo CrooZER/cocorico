@@ -165,6 +165,16 @@
                                             </div>
                                         </div>
                                         <div class="field-row">
+                                            <span class="label">{{ form_label(form.isbn) }}</span>
+                                            <div class="field-holder">
+                                                {{ form_widget(form.isbn, {
+                                                    'attr': {
+                                                        'class': "form-control"
+                                                    }
+                                                }) }}
+                                            </div>
+                                        </div>
+                                        <div class="field-row">
                                             <div class="col location">
                                                 {{ form_errors(form.location.city) }}
                                                 <span class="label">{{ form_label(form.location.city) }}</span>
