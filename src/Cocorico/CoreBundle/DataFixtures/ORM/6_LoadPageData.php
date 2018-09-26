@@ -31,12 +31,15 @@ class LoadPageData extends AbstractFixture implements OrderedFixtureInterface
 
         $page->translate('en')->setMetaTitle('Who we are?');
         $page->translate('fr')->setMetaTitle('Qui sommes nous?');
+        $page->translate('nl')->setMetaTitle('Wie we zijn?');
 
         $page->translate('en')->setTitle('Who we are?');
         $page->translate('fr')->setTitle('Qui sommes nous?');
+        $page->translate('nl')->setTitle('Wie we zijn?');
 
         $page->translate('en')->setMetaDescription('in progress');
         $page->translate('fr')->setMetaDescription('en cours');
+        $page->translate('nl')->setMetaDescription('bezig');
 
         $page->translate('en')->setDescription(
             '<p>We are Cocorico of course!</p>
@@ -65,21 +68,40 @@ class LoadPageData extends AbstractFixture implements OrderedFixtureInterface
             <p>Voici une vid&eacute;o de &quot;Cocotte&quot;&nbsp;: http://<a href="http://cocorico.rocks/">cocorico.rocks/</a></p>'
         );
 
+        $page->translate('nl')->setDescription(
+            '<p>Wij zijn natuurlijk Cocorico!</p>
+            <h2>Wat is het?</h2>
+            <p>Cocorico is een open source project dat zich richt op het bouwen van een krachtige (en gratis) oplossing voor verhuur- en servicemarkten.</p>
+            <h2>Wie betaalt er voor dit alles ?</h2>
+            <p><a href="http://www.cocolabs.io" target="_blank">Cocolabs</a>. 
+Ze zijn een in Parijs gevestigd webagentschap dat gespecialiseerd is in het bouwen van gezamenlijke marktplaatsen voor de verhuur- en dienstensector. In de loop der jaren besloten ze hun werk te delen door de ontwikkeling van Cocorico te financieren.</p>
+            <h2>Wat heb je gebruikt om Cocorico te bouwen?</h2>
+            <p>Cocorico is gebaseerd op Symfony 2.</p>	
+            <h2>Waar kan ik het krijgen?</h2>
+            <p>Ici : <a href="https://github.com/Cocolabs-SAS/cocorico" target="_blank">https://github.com/Cocolabs-SAS/cocorico</a></p>
+            <h2>Heb je een mascotte?</h2>
+            <p>Hier is een video van onze schattige kip Cocotte: http://<a href="http://cocorico.rocks/">cocorico.rocks/</a></p>'
+	    );
+
         //Page How it Works
         $page1 = new Page();
         $page1->setPublished(true);
 
         $page1->translate('en')->setMetaTitle('How it works?');
         $page1->translate('fr')->setMetaTitle('Comment ca marche?');
+        $page1->translate('nl')->setMetaTitle('Hoe het werkt?');
 
         $page1->translate('en')->setTitle('How it works?');
         $page1->translate('fr')->setTitle('Comment ca marche?');
+        $page1->translate('nl')->setTitle('Hoe het werkt?');
 
         $page1->translate('en')->setMetaDescription('in progress');
         $page1->translate('fr')->setMetaDescription('en cours');
+        $page1->translate('nl')->setMetaDescription('bezig');
 
         $page1->translate('en')->setDescription('in progress');
         $page1->translate('fr')->setDescription('en cours');
+        $page1->translate('nl')->setDescription('bezig');
 
         //Page The team
         $page2 = new Page();
@@ -87,15 +109,19 @@ class LoadPageData extends AbstractFixture implements OrderedFixtureInterface
 
         $page2->translate('en')->setMetaTitle('The team');
         $page2->translate('fr')->setMetaTitle('L\'équipe');
+        $page2->translate('nl')->setMetaTitle('Het team');
 
         $page2->translate('en')->setTitle('The team');
         $page2->translate('fr')->setTitle('L\'équipe');
+        $page2->translate('nl')->setMetaTitle('Het team');
 
         $page2->translate('en')->setMetaDescription('in progress');
         $page2->translate('fr')->setMetaDescription('en cours');
+        $page2->translate('nl')->setMetaDescription('bezig');
 
         $page2->translate('en')->setDescription('in progress');
         $page2->translate('fr')->setDescription('en cours');
+        $page2->translate('nl')->setDescription('bezig');
 
         //Page FAQ
         $page3 = new Page();
@@ -103,15 +129,19 @@ class LoadPageData extends AbstractFixture implements OrderedFixtureInterface
 
         $page3->translate('en')->setMetaTitle('FAQ');
         $page3->translate('fr')->setMetaTitle('FAQ');
+        $page3->translate('nl')->setMetaTitle('FAQ');
 
         $page3->translate('en')->setTitle('FAQ');
         $page3->translate('fr')->setTitle('FAQ');
+        $page3->translate('nl')->setTitle('FAQ');
 
         $page3->translate('en')->setMetaDescription('in progress');
         $page3->translate('fr')->setMetaDescription('en cours');
+        $page3->translate('nl')->setMetaDescription('bezig');
 
         $page3->translate('en')->setDescription('in progress');
         $page3->translate('fr')->setDescription('en cours');
+        $page3->translate('nl')->setDescription('bezig');
 
 
         //Page Legal notices
@@ -120,15 +150,19 @@ class LoadPageData extends AbstractFixture implements OrderedFixtureInterface
 
         $page4->translate('en')->setMetaTitle('Legal notices');
         $page4->translate('fr')->setMetaTitle('Mentions légales');
+        $page4->translate('nl')->setMetaTitle('Juridische kennisgevingen');
 
         $page4->translate('en')->setTitle('Legal notices');
         $page4->translate('fr')->setTitle('Mentions légales');
+        $page4->translate('nl')->setTitle('Juridische kennisgevingen');
 
         $page4->translate('en')->setMetaDescription('in progress');
         $page4->translate('fr')->setMetaDescription('en cours');
+        $page4->translate('nl')->setMetaDescription('bezig');
 
         $page4->translate('en')->setDescription('in progress');
         $page4->translate('fr')->setDescription('en cours');
+        $page4->translate('nl')->setDescription('bezig');
 
 
         $page5 = new Page();
@@ -136,15 +170,19 @@ class LoadPageData extends AbstractFixture implements OrderedFixtureInterface
 
         $page5->translate('en')->setMetaTitle('Terms of use');
         $page5->translate('fr')->setMetaTitle('Conditions générales d\'utilisation');
+        $page5->translate('nl')->setMetaTitle('Gebruiksvoorwaarden');
 
         $page5->translate('en')->setTitle('Terms of use');
         $page5->translate('fr')->setTitle('Conditions générales d\'utilisation');
+        $page5->translate('nl')->setTitle('Gebruiksvoorwaarden');
 
         $page5->translate('en')->setMetaDescription('in progress');
         $page5->translate('fr')->setMetaDescription('en cours');
+        $page5->translate('nl')->setMetaDescription('bezig');
 
         $page5->translate('en')->setDescription('in progress');
         $page5->translate('fr')->setDescription('en cours');
+        $page5->translate('nl')->setDescription('bezig');
 
         $manager->persist($page);
         $manager->persist($page1);
@@ -206,5 +244,4 @@ class LoadPageData extends AbstractFixture implements OrderedFixtureInterface
     {
         return 9;
     }
-
 }

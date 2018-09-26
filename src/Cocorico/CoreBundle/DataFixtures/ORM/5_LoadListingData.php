@@ -44,17 +44,20 @@ class LoadListingData extends AbstractFixture implements OrderedFixtureInterface
         $country->setCode("FR");
         $country->translate('en')->setName('France');
         $country->translate('fr')->setName('France');
+        $country->translate('nl')->setName('Frankrijk');
 
         $area = new Area();
         $area->setCountry($country);
         $area->translate('en')->setName('Île-de-France');
         $area->translate('fr')->setName('Île-de-France');
+        $area->translate('nl')->setName('Île-de-France');
 
         $department = new Department();
         $department->setCountry($country);
         $department->setArea($area);
         $department->translate('en')->setName('Paris');
         $department->translate('fr')->setName('Paris');
+        $department->translate('nl')->setName('Parijs');
 
         $city = new City();
         $city->setCountry($country);
@@ -62,6 +65,7 @@ class LoadListingData extends AbstractFixture implements OrderedFixtureInterface
         $city->setDepartment($department);
         $city->translate('en')->setName('Paris');
         $city->translate('fr')->setName('Paris');
+        $city->translate('nl')->setName('Parijs');
 
         $manager->persist($country);
         $manager->persist($area);
@@ -112,9 +116,11 @@ class LoadListingData extends AbstractFixture implements OrderedFixtureInterface
         $listing->addImage($image2);
         $listing->translate('en')->setTitle('Listing One');
         $listing->translate('fr')->setTitle('Annonce une');
+        $listing->translate('nl')->setTitle('Aanbieding één');
 
         $listing->translate('en')->setDescription('Listing One Description');
         $listing->translate('fr')->setDescription('Description de l\'annonce une');
+        $listing->translate('nl')->setDescription('Eén beschrijving vermelden');
         $listing->setStatus(Listing::STATUS_PUBLISHED);
         $listing->setPrice(10000);
         $listing->setCertified(1);
